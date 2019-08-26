@@ -29,6 +29,18 @@
     color: $primary-color;
 }
 
+// Images
+.round-img {
+    border-radius: 50%;
+}
+
+// Line
+.line {
+    height: 1px;
+    background: #ccc;
+    margin: 2rem 0;
+}
+
 
 // Backgrounds
 .bg {

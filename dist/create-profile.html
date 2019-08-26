@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://kit.fontawesome.com/ba063b2155.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:600&display=swap" rel="stylesheet">
+    <title>Welcome to Band Finder</title>
+</head>
+
+<body>
+    <nav class="navbar bg-dark">
+        <h1>
+            <a href="dashboard.html"><i class="fas fa-music"></i> Band Finder</a>
+        </h1>
+        <ul>
+            <li><a href="profiles.html">Musicians</a></li>
+            <li><a href="posts.html">Posts</a></li>
+            <li>
+                <a href="dashboard.html">
+                    <i class="fas fa-user"></i>
+                    <span class="hide-sm"> Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="login.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="hide-sm"> Logout</span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+    <section class="container">
+        <h1 class="large text-primary">
+            Create Your Profile
+        </h1>
+        <p class="lead">
+            <i class="fas fa-user"></i>
+            Fill out the form to let other musicians connect with you
+        </p>
+        <small> * = required fields</small>
+        <form class="form">
+            <div class="form-group">
+                <select name="status">
+                    <option value="0">* Select Status</option>
+                    <option value="Musician">Musician</option>
+                    <option value="Band">Band</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Promoter">Promoter</option>
+                    <option value="Client">Client</option>
+                    <option value="Other">Other</option>
+                </select>
+                <small class="form-text">
+                    Select your status (eg. Musician, Band, Manager, etc.)
+                </small>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Projects" name="projects" />
+                <small class="form-text">
+                    List your projects/bands here. Use a comma to seperate items (eg. Project 1,
+                    Project 2, etc.)
+                </small>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Website" name="website" />
+                <small class="form-text">
+                    Link to your personal or band website
+                </small>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Location" name="ocation" />
+                <small class="form-text">
+                    City & State (eg. Denver, CO)
+                </small>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="*Instruments" name="instruments" />
+                <small class="form-text">
+                    List the instruments you play. Use a comma to seperate items (eg. Guitar,
+                    Bass, etc.). If you don't play an instrument, write "None".
+                </small>
+            </div>
+            <div class="form-group">
+                <textarea name="Bio" placeholder="A short bio of yourself" cols="30" rows="10"></textarea>
+                <small class="form-text">Tell us a little about yourself</small>
+            </div>
+            <div class="my-2">
+                <button class="btn btn-light" type="button">
+                    Add Social Network Links
+                </button>
+                <span>Optional</span>
+            </div>
+
+            <div class="form-group social-input">
+                <i class="fab fa-twitter fa-2x"></i>
+                <input type="text" placeholder="Twitter URL" name="twitter">
+            </div>
+            <div class="form-group social-input">
+                <i class="fab fa-facebook fa-2x"></i>
+                <input type="text" placeholder="Facebook URL" name="facebook">
+            </div>
+            <div class="form-group social-input">
+                <i class="fab fa-instagram fa-2x"></i>
+                <input type="text" placeholder="Instagram URL" name="instagram">
+            </div>
+            <div class="form-group social-input">
+                <i class="fab fa-soundcloud fa-2x"></i>
+                <input type="text" placeholder="Soundcloud URL" name="soundcloud">
+            </div>
+            <div class="form-group social-input">
+                <i class="fab fa-spotify fa-2x"></i>
+                <input type="text" placeholder="Spotify URL" name="spotify">
+            </div>
+            <div class="form-group social-input">
+                <i class="fab fa-itunes fa-2x"></i>
+                <input type="text" placeholder="iTunes URL" name="itunes">
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
