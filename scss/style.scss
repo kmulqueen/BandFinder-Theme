@@ -138,4 +138,30 @@ img {
     .profile-posts {
         grid-area: posts;
     }
+
+
 }
+
+// Posts Page
+.post-form-header {
+    padding: .8rem;
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 3rem;
+    align-items: center;
+
+
+    &>div:first-child {
+        text-align: center;
+    }
+
+    img {
+        width: 150px;
+    }
+
+}
+
+@import 'mobile';
